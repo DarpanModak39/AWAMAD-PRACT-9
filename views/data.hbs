@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+        <a href="/data">Show Data</a>
+    </nav>
+    <h1>Vaccination Data</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Aadhar Number</th>
+            <th>Mobile Number</th>
+            <th>Address</th>
+            <th>PHC</td>
+        </tr>
+        {{#each data}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{aadhar}}</td>
+                <td>{{mobile}}</td>
+                <td>{{address}}</td>
+                <td>{{phc}}</td>
+            </tr>
+        {{/each}}
+        
+    </table>
+</body>
+</html>
